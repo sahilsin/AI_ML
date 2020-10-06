@@ -3,6 +3,8 @@ import numpy as np
 import math as mt
 
 #changing value of n i.e the number of coin tossed as for simulation nothing else can be varied
+#here any P(E) or probability we are calculating through bernoulli distribution where p =0.5 and n varies.
+#P(bernoulli Distribution)= NCn P^n * (1-p)^N-n when p=1-p in this case = NCn * (p)^N
 for n in range(3,1000):
     P_E=0
     P_F=0
