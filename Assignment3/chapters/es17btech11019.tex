@@ -44,6 +44,49 @@ Value of Z at point
 We can see that our function Z is maximum at points A and D that is (60,30) and (120,0)\\
 and\\
 Z is minimum at point C that is (60,0)\\
+The given problem can be expressed in general as matrix inequality as:
+\begin{align}
+\max_{\vec{x}} Z &= \myvec{5 & 10}\vec{x}
+\\
+s.t. \quad 
+\myvec{
+1 & 2
+\\
+-1 & -1
+\\
+-1 & 2
+}
+\vec{x} &\preceq \myvec{120\\-60\\0}
+\\
+\vec{x} &\succeq \vec{0}\\
+\vec{y} &\succeq \vec{0}
+\end{align}
+\begin{align}
+\max_{\vec{x}} &\vec{c}^{T}\vec{x}
+\\
+s.t. \quad \vec{A}\vec{x} &\le \vec{b},
+\\
+\vec{x} &\succeq\vec{0}\\
+\vec{y} &\succeq \vec{0}
+\end{align}
+%
+where
+\begin{align}
+\vec{c} &= \myvec{5 \\ 10}
+\\
+\vec{A} &=
+\myvec{
+1 & 2
+\\
+-1 & -1
+\\
+-1 & 2
+}
+\\
+\vec{b}&=\myvec{120\\-60\\0}
+%
+\end{align}
+%
 %
 \section{Verification}
 The given solution can be verified through the given code.\\
